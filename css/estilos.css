@@ -11,7 +11,7 @@ form{
     padding: 20px;
     text-align: center;
     margin: auto; /*para que se centre*/
-    margin-top: 40px;
+    margin-top: 10px;
     animation: cambia-color 10s linear infinite; /*aqui la animacion del fondo*/
     background: -webkit-linear-gradient(right, #9c35d8, #178a84); /*aqui el degradado de que color a que color y el atributo -wekit- es para que funcione en cualquier navegador*/
     background-size: 400% 400%; /*el tamaño del degradado*/
