@@ -11,8 +11,9 @@ form{
     padding: 20px;
     text-align: center;
     margin: auto; /*para que se centre*/
+    margin-top: 40px;
     animation: cambia-color 10s linear infinite; /*aqui la animacion del fondo*/
-    background: -webkit-linear-gradient(left, #161ae6, #c33f3f); /*aqui el degradado de que color a que color y el atributo -wekit- es para que funcione en cualquier navegador*/
+    background: -webkit-linear-gradient(right, #9c35d8, #178a84); /*aqui el degradado de que color a que color y el atributo -wekit- es para que funcione en cualquier navegador*/
     background-size: 400% 400%; /*el tamaño del degradado*/
 }
 
@@ -21,10 +22,10 @@ form{
         background-position: 0%, 50%; /*se movera desde el 0% hasta el 50%*/
     }
     50%{
-        background-position: 50%, 50%;
+        background-position: 100%, 50%;
     }
     100%{
-        background-position: 50%, 100%;
+        background-position: 0%, 100%;
     }
 }
 
