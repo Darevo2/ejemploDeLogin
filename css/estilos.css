@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Arial, Helvetica 
+}
+
+form{
+    width: 100%; /*poner esto antes de un "max-width"*/
+    max-width: 400px; /*con este ya se hace responsive desing*/
+    padding: 20px;
+    text-align: center;
+    margin: auto; /*para que se centre*/
+    animation: cambia-color 10s linear infinite; /*aqui la animacion del fondo*/
+    background: -webkit-linear-gradient(left, #161ae6, #c33f3f); /*aqui el degradado de que color a que color y el atributo -wekit- es para que funcione en cualquier navegador*/
+    background-size: 400% 400%; /*el tamaño del degradado*/
+}
+
+@keyframes cambia-color{ /*los keyframes de la animación*/
+    0%{
+        background-position: 0%, 50%; /*se movera desde el 0% hasta el 50%*/
+    }
+    50%{
+        background-position: 50%, 50%;
+    }
+    100%{
+        background-position: 50%, 100%;
+    }
+}
+
+.title{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 100;
+    color: white;
+}
+
+.logotipo{
+    width: 140px;
+    margin-top: 40px; /*es para que el logo baje un poco mas*/
+}
+
+::placeholder{
+    color:white;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border-style: none; /*para quitar el borde*/
+    outline: 0px; /*para quitar el borde azul*/
+    color:white; /*es el color cuando yo coloque los textos en los inputs*/   
+}
+
+input[type="password"]{
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.4); /*el ultimo atributo es un valor de transparencia*/
+    border-style: none; /*para quitar el borde*/
+    outline: 0px; /*para quitar el borde azul*/
+    color:white;
+}
+
+input[type="button"]{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2); /*el ultimo atributo es un valor de transparencia*/
+    border-style: none; /*para quitar el borde*/
+    border: 2px solid rgba(255, 255, 255, 0.4)
+    outline: 0px; /*para quitar el borde azul*/
+    color: white;
+    /* transition: background 300ms; para que el cambio de color del boton no sea tan bruzco */
+}
+
+input[type="button"]:hover{ /*cuando pasemos el masuse por este bonton*/
+    cursor: pointer; /*para que aparezca la manito*/
+    background: rgba(255, 255, 255, 0.6); /*el ultimo atributo es un valor de transparencia*/
+}
+
+.container-data{
+    width: 100%;
+    display: flex; /*el texto se pone uno alado del otro*/
+    justify-content: center; /*aca NO se puede usar "text-aling=center" por que eatamos usando FLEX, asi que usamos "justify"*/
+    margin-top: 20px;
+}
+
+.container-data h4{
+    font-size: 12px;
+    font-weight: 100;
+    color: white;
+    margin: 2px;
+}
+
+.container-data a{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 2px; /*para quitarle la rayita que tiene debajo*/
+}
+
+.container-or{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.container-or hr{
+    width: 160px;
+    height: 1px;
+    border-style: none;
+    background: white;
+    margin-top: 7px;
+}
+
+.container-or h2{
+    font-size: 14px;
+    color: white;
+}
+
+.container-iconf{
+    margin-top: 40px;
+}
+
+.icon-facebook{
+    color: white;
+    font-size: 22px;
+}
+
+.icon-facebook a{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none; /*para sacarle las lineas*/
+    color:white;
+}
+
+.container-register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    text-decoration: none;
+}
+
+.container-register h4{
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+}
+
+.container-register a{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 4px; /*para que haya una separación*/
+    color: white;
+
+}
+
